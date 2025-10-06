@@ -13,14 +13,14 @@ enum MainRoute: Hashable {
     case settings
     
     @ViewBuilder
-    var destiantion: some View {
+    var destination: some View {
         switch self {
         case .home:
             Text("Home")
         case .detail(id: let id):
             Text("Detail \(id)")
         case .settings:
-            Text("Settings")
+            SettingsView()
         }
     }
 }

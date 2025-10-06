@@ -15,7 +15,7 @@ struct RootContainer: View {
         NavigationStack(path: $router.path) {
             ContentView()
                 .navigationDestination(for: MainRoute.self) { route in
-                    route.destiantion
+                    route.destination
                 }
         }.environmentObject(router)
     }
